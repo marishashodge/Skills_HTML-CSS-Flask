@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Skills-HTML-CSS{% endblock %}
+
+
+{% block content  %}
+    <form action="/application" method="POST">
+        <h1>Application Form</h1>
+            <p>Please fill out the following fields.<br>All fields are required.</p>
+        <label>First Name:
+            <input type="text" name="firstname">
+        </label>
+        <br>
+        <br>
+        <label>
+        <b>Last Name:</b>
+            <input type="text" name="lastname">
+        </label>
+        <br>
+        <br>
+        <label>
+        Please enter your salary requirement as a number:
+        <br>
+            <input type="text" name="salary" placeholder="i.e. 80000">
+        </label>
+        <br>
+        <br>
+        Which job are you applying to?
+        <br>
+            <input type="radio" name="job" value="Software Engineer"> Software Engineer<br>
+            <input type="radio" name="job" value="QA Engineer"> QA Engineer<br>
+            <input type="radio" name="job" value="Product Manager"> Product Manager
+        <br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+ {% endblock %}
